@@ -11,19 +11,19 @@ import Logo from '../assets/logo.png';
 function Header() {
     return (
         <header className='header'>
-        <nav className="nav">
-            <Link to="/">
-                <img className='nav_logo' src={Logo} alt="Logo Kasa" />
-            </Link>
-            <NavLink to="/" className='nav_link'>
-                Accueil
-            </NavLink>
-            <NavLink to="/about" className='nav_link'>
-                À Propos
-            </NavLink>
-        </nav>
+            <nav className="nav">
+                <Link to="/">
+                    <img className='nav_logo' src={Logo} alt="Logo Kasa" />
+                </Link>
+                <NavLink to="/" className='nav_link'>
+                    Accueil
+                </NavLink>
+                <NavLink to="/about" className='nav_link'>
+                    À Propos
+                </NavLink>
+            </nav>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;
