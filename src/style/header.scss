@@ -1,0 +1,30 @@
+.header {
+    margin-top: 45px;
+ }
+
+ .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav_logo {
+    width: 180px;
+ }
+
+.nav_link {
+    color: #FF6060;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 0 0 60px;
+ }
+
+ .nav_link.active:hover {
+    filter: brightness(0.9);
+ }
+ 
+ .nav_link.active {
+    text-decoration: underline;
+ }
+ 
+

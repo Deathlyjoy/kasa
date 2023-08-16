@@ -17,6 +17,7 @@ import Footer from "./layout/Footer";
 function App() {
   return (
     <BrowserRouter> {/* Utilisation du composant BrowserRouter pour gérer la navigation */}
+      <div className='container'>
       <Header /> {/* Utilisation du composant Header pour afficher le header */}
       <Routes> {/* Utilisation du composant Routes pour définir les routes */}
         <Route path="/" element={<Home />} /> {/* Route pour la page d'accueil */}
@@ -25,6 +26,7 @@ function App() {
         <Route path="*" element={<Error />} /> {/* Route pour toutes les autres URL (erreur 404) */}
       </Routes>
       <Footer /> {/* Utilisation du composant Footer pour afficher le footer */}
+      </div>
     </BrowserRouter>
   );
 }
