@@ -18,14 +18,14 @@ function App() {
   return (
     <BrowserRouter> {/* Utilisation du composant BrowserRouter pour gérer la navigation */}
       <div className='container'>
-      <Header /> {/* Utilisation du composant Header pour afficher le header */}
-      <Routes> {/* Utilisation du composant Routes pour définir les routes */}
-        <Route path="/" element={<Home />} /> {/* Route pour la page d'accueil */}
-        <Route path="/about" element={<About />} /> {/* Route pour la page "A Propos" */}
-        <Route path="/location/:id" element={<Location />} /> {/* Route pour une page d'hébergement spécifique */}
-        <Route path="*" element={<Error />} /> {/* Route pour toutes les autres URL (erreur 404) */}
-      </Routes>
-      <Footer /> {/* Utilisation du composant Footer pour afficher le footer */}
+        <Header /> {/* Utilisation du composant Header pour afficher le header */}
+        <Routes> {/* Utilisation du composant Routes pour définir les routes */}
+          <Route path="/" element={<Home />} /> {/* Route pour la page d'accueil */}
+          <Route path="/about" element={<About />} /> {/* Route pour la page "A Propos" */}
+          <Route path="/location/:id" element={<Location />} /> {/* Route pour une page d'hébergement spécifique */}
+          <Route path="*" element={<Error />} /> {/* Route pour toutes les autres URL (erreur 404) */}
+        </Routes>
+        <Footer /> {/* Utilisation du composant Footer pour afficher le footer */}
       </div>
     </BrowserRouter>
   );
