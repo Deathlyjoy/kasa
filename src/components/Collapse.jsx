@@ -1,6 +1,12 @@
 // ----- Import du hook useState de React -----
 import { useState } from "react";
 
+// ----- Import fichier de style -----
+import '../style/collapse.scss';
+
+// ----- Import des assets -----
+import Arrow from '../assets/arrow_down.png';
+
 // ----- Fonction Collapse -----
 export default function Collapse(props) {
   // Crée une variable d'état isActive initialisée à false
@@ -31,12 +37,7 @@ export default function Collapse(props) {
     <article className={props.class}>
       <div className="dropdown_trigger" onClick={() => setIsActive(!isActive)}>
         <h2 className="dropdown_title">{props.title}</h2>
-        <img 
-          // Retourne la flèche au clic avec "?"
-          src={process.env.PUBLIC_URL + "/vector.png"}
-          alt="vector"
-          className={isActive ? "dropdown_chevron_rotate" : "dropdown_chevron"}
-        />
+        <img src={Arrow} alt="arrow" className={isActive ? "dropdown_chevron_rotate" : "dropdown_chevron"}/>
       </div>
       <div className={isActive ? "dropdown_body_anim" : "dropdown_body"}>
         {collapseContent()}

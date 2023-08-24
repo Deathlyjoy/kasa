@@ -1,24 +1,34 @@
 // ----- Import fichier de style -----
-import '../style/about.scss'
+import '../style/about.scss';
 
-//----- Import des composants -----
+// ----- Import des composants -----
 import Banner from "../components/Banner";
+import Collapse from '../components/Collapse';
 
-// ----- Import Collapse -----
-import Collapse from '../components/Collapse'
-
-// ----- Import des assets -----
+// ----- Import fichier JSON -----
 import data from '../assets/aboutCollapse.json'
 
-
-// ----- Page About -----
 function About() {
-   return (
-      <main>
-         <Banner origin="about" /> {/* Affiche le composant Banner ayant l'origine "about" */}
-         <Collapse data={data}/>
-      </main>
-   )
- }
- 
- export default About;
+    return (
+        <main>
+            <Banner origin="about" /> {/* Affiche le composant Banner ayant l'origine "about" */}
+            <section className="dropdown">
+          {
+            // voici un commentaire
+          }
+          {data.map((text, idx) => {
+            return (
+              <Collapse
+                title={text.title}
+                key={idx}
+                description={text.description}
+                class="dropdown_container"
+              />
+            );
+          })}
+        </section>
+        </main>
+    )
+}
+
+export default About;
