@@ -2,10 +2,21 @@
 
 .dropdown {
   width: 80%;
-  margin: 43px auto;
+  margin: 38px auto;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 .dropdown_container {
   margin-bottom: 25px;
+}
+
+.dropdown_text {
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
 }
 .dropdown_trigger {
   display: flex;
@@ -24,20 +35,28 @@
   font-weight: 500;
   font-size: 24px;
   margin: 5px 0px;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
 }
+
 .dropdown_chevron {
   width: 13px;
 }
+
 .dropdown_chevron_rotate {
   animation: rotate 0.5s ease forwards;
   width: 13px;
 }
+
 .dropdown_body {
   opacity: 0;
   transition: max-height 0.3s ease;
   max-height: 0;
   overflow: hidden;
 }
+
 .dropdown_body_anim {
   font-family: "Montserrat";
   font-size: 24px;

@@ -12,28 +12,29 @@
   margin: 80px 0 10px 0;
   font-weight: 700;
   font-size: 288px;
+
+  @media (max-width: 1024px) {
+    font-size: 96px;
+  }
+
 }
 .error_p {
   font-size: 36px;
   line-height: 26px;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 113px;
+  }
 }
 .error_return {
   margin-top: 150px;
   text-decoration: underline;
   font-size: 18px;
   color: #ff6060;
-}
 
-/* MediaQueries */
-@media all and (max-width: 767px) {
-  .error_title {
-    font-size: 96px;
-  }
-  .error_p {
-    font-size: 18px;
-    text-align: center;
-  }
-  .error_return {
+  @media (max-width: 1024px) {
     font-size: 14px;
   }
 }

@@ -7,6 +7,14 @@
     border-radius: 30px;
     padding: 35px 0;
     margin: 50px 0;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+      // justify-content: space-between;
+      background-color: white;
+      padding: 0;
+      margin: 20px 0;
+   }
  }
  
  .ContCard {
@@ -15,6 +23,12 @@
     height: 340px;
     margin: 30px;
     transition: 0.2s;
+
+    @media (max-width: 1024px) {
+      width: 335px;
+      height: 255px;
+      margin: 0 0 20px 0;
+   }
 
  }
  
@@ -27,6 +41,11 @@
     width: 340px;
     height: 340px;
     border-radius: 15px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 255px;
+   }
  
  }
  
@@ -39,6 +58,10 @@
     position: relative;
     bottom: 345px;
 
+    @media (max-width: 1024px) {
+      bottom: 260px;
+   }
+
  }
  
  .TitleLocation {
@@ -50,5 +73,9 @@
     bottom: 395px;
     left: 20px;
     margin: 0;
+
+    @media (max-width: 1024px) {
+      bottom: 310px;
+   }
     
  }

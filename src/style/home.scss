@@ -4,6 +4,11 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 43px;
+
+    @media (max-width: 1024px) {
+        margin-top: 27px;
+        margin-bottom: 2px;
+     }
 }
 
 .banner_home::after {
@@ -12,6 +17,9 @@
     position: absolute;
     color: white;
     font-size: 48px;
+    @media (max-width: 1001px) {
+        font-size: 20px;
+     }
 }
 
 .banner_img {
@@ -20,4 +28,8 @@
     height: 223px;
     border-radius: 25px;
     filter: brightness(0.75);
+
+    @media (max-width: 1024px) {
+        height: 115px;
+     }
 }

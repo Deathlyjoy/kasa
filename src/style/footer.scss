@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1024px) {
+      margin-top: 27px;
+   }
  }
 
  .footer_logo {
@@ -16,4 +20,8 @@
  .footer_text {
     color: white;
     font-weight: 500;
+
+    @media (max-width: 1024px) {
+      font-size: 15px;
+   }
  }
